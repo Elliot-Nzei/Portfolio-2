@@ -20,6 +20,14 @@ body {
 }
 
 /* Sidebar - Glassmorphism */
+.avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2dc6f1c4;
+  margin-bottom: 15px;
+}
 .sidebar {
   width: 270px;
   background: rgba(255, 255, 255, 0.1);
@@ -33,27 +41,9 @@ body {
   height: 100vh;
   z-index: 2;
 }
-.avatar {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid #ffffff80;
-  margin-bottom: 15px;
-}
 .sidebar h2 {
   font-size: 22px;
   margin-bottom: 5px;
-}
-.sidebar-box {
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 12px;
-  padding: 18px 15px;
-  margin-bottom: 22px;
-  width: 100%;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-  text-align: center;
 }
 .box-p {
   display: inline-block;
@@ -96,52 +86,22 @@ body {
 .social-links a i {
   font-size: 18px;
 }
-/*Skills Session*/
-.skills-box {
-  background: rgba(255, 255, 255, 0.05);
+.contact-box {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  padding: 25px;
-  margin-top: 30px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
-.skills-box h3 {
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #00c9ff;
+.contact-box ul.contact {
+  padding-left: 0;
 }
-.skills-list {
-  list-style: none;
-  padding: 0;
-}
-.skills-list li {
-  font-size: 14px;
+.contact-box ul.contact li {
   margin-bottom: 10px;
   color: #eee;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.skills-list i {
-  color: #00c9ff;
-}
-
-/*Skills Session END*/
-.sidebar ul {
-  margin-top: 20px;
-  width: 100%;
-}
-.sidebar ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-}
-.contact li {
-  list-style: none;
   font-size: 13px;
-  margin-bottom: 50px;
-  color: #ddd;
 }
 .btn {
   background: #00c9ff;
@@ -196,40 +156,36 @@ body {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* Vertical Right Navigation */
-.nav {
-  width: 90px;
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100vh;
-  background: #111111;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 25px;
+/* Skills Section */
+.skills-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  margin-top: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
 }
-.nav a {
-  width: 45px;
-  height: 45px;
-  background: #00c9ff;
-  color: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  text-decoration: none;
-  transition: 0.3s;
-}
-.nav a:hover {
-  background: #92fe9d;
-}
-.nav a i {
+.skills-box h3 {
   font-size: 20px;
-  color: #000;
+  margin-bottom: 15px;
+  color: #00c9ff;
 }
-/* Footer */
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+.skills-list li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #eee;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.skills-list i {
+  color: #00c9ff;
+}
 
 /* Contact Form */
 #contact {
@@ -270,22 +226,39 @@ body {
 #contactForm button:hover {
   background: #92fe9d;
 }
-.contact-box {
-  margin-top: 20px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 12px;
-  width: 100%;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+/* Vertical Right Navigation */
+.nav {
+  width: 90px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  background: #111111;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
 }
-.contact-box ul.contact {
-  padding-left: 0;
+.nav a {
+  width: 45px;
+  height: 45px;
+  background: #00c9ff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
 }
-.contact-box ul.contact li {
-  margin-bottom: 10px;
-  color: #eee;
-  font-size: 13px;
+.nav a:hover {
+  background: #92fe9d;
+}
+.nav a i {
+  font-size: 20px;
+  color: #000;
 }
 
 /* Responsive */
