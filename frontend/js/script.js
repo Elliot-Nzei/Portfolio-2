@@ -91,3 +91,32 @@ document.addEventListener("DOMContentLoaded", function () {
 // This script handles the testimonial submission and rendering
 // It allows users to submit testimonials and view existing ones
 // It also includes a secret command to delete testimonials by name
+
+async function showPopup(type) {
+  const overlay = document.getElementById('popup-overlay');
+  const container = document.getElementById('popup-container');
+  const content = document.getElementById('popup-data');
+  try {
+    const res = await fetch('./data/profile.json');
+    const data = await res.json();
+    if (type === 'experience') {
+      content.innerHTML = '<h2>Experience</h2><ul>' +
+        data.experience.map(exp =>
+          `<li><strong>${exp.role}</strong> at ${exp.company} (${exp.years})</li>`
+        ).join('') + '</ul>';
+    } else if (type === 'certificates') {
+      content.innerHTML = '<h2>Certificates</h2><ul>' +
+        data.certificates.map(cert => `<li>${cert}</li>`).join('') + '</ul>';
+    }
+    overlay.style.display = 'block';
+    container.style.display = 'block';
+  } catch (error) {
+    content.innerHTML = '<p>Error loading data.</p>';
+    console.error(error);
+  }
+}
+function closePopup() {
+  document.getElementById('popup-overlay').style.display = 'none';
+  document.getElementById('popup-container').style.display = 'none';
+}
+// This script handles the popup functionality for displaying experience and certificates

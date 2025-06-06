@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar -->
+    <!-- Sidebar Beginning -->
     <aside class="sidebar">
       <a href="index.html" title="Home">
         <img src="./images/image_02.jpg" alt="Elliot Nzei Photo" class="avatar">
@@ -35,7 +35,13 @@
         </ul>
       </div>
       <a href="../backend/public/ELLIOT'S CV.pdf" class="btn" download>Download CV</a>
+
+      <div class="switch-box">
+        <button onclick="showPopup('experience')" class="btn">Experience</button>
+        <button onclick="showPopup('certificates')" class="btn">Certificates</button>
+      </div>
     </aside>
+    <!-- Sidebar End -->
 
     <!-- Main Content -->
     <main class="content">
@@ -98,14 +104,25 @@
         </form>
       </section>
     </main>
+    
+    <!-- Popup for Experience and Certificates -->
+    <div id="popup-overlay" style="display:none;" onclick="closePopup()"></div>
+
+    <div id="popup-container" class="popup" style="display:none;">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <div id="popup-data"></div>
+      </div>
+    </div>
+
 
     <!-- Right Nav -->
     <nav class="nav">
       <a href="about.html" title="About"><i class="fas fa-user"></i></a>
       <a href="skills.html" title="Skills"><i class="fas fa-code"></i></a>
-      <a href="#projects" title="Projects"><i class="fas fa-project-diagram"></i></a>
-      <a href="#research" title="Research"><i class="fas fa-flask"></i></a>
-      <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
+      <a href="projects.html" title="Projects"><i class="fas fa-project-diagram"></i></a>
+      <a href="research.html" title="Research"><i class="fas fa-flask"></i></a>
+      <a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
     </nav>
   </div>
   <script src="js/script.js"></script>
