@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio-2 | Elliot Nzei</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>About Elliot Nzei</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <div class="container">
     <!-- Sidebar -->
     <aside class="sidebar">
       <a href="index.html" title="Home">
-        <img src="./images/image_02.jpg" alt="Elliot Nzei Photo" class="avatar">
+        <img src="./images/image_02.jpg" alt="Elliot Nzei" class="avatar" />
       </a>
       <h2>Elliot Ekene Nzei</h2>
-        <p class="box-p">Full Stack Developer</p>
+      <p class="box-p">Full Stack Developer</p>
 
-        <div class="social-wrapper">
-          <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#"><i class="fab fa-x-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
+      <div class="social-wrapper">
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
         </div>
+      </div>
+
       <div class="contact-box">
         <ul class="contact">
           <li><i class="fas fa-phone-alt"></i> +234 814 864 4730</li>
@@ -34,108 +34,93 @@
           <li><i class="fas fa-birthday-cake"></i> April 10, 2002</li>
         </ul>
       </div>
+
       <a href="../backend/public/ELLIOT'S CV.pdf" class="btn" download>Download CV</a>
     </aside>
 
+    <!-- Main Content -->
+    <main class="content">
+      <section id="about">
+        <h1>About Me</h1>
+      
+        <!-- Main Bio -->
+        <p>
+          I'm <strong>Elliot Ekene Nzei</strong>, a <span class="tag">Full Stack Developer</span> and <span class="tag">Research Technologist</span> focused on building robust, intelligent systems using <span class="tag">Python</span>, <span class="tag">JavaScript</span>, <span class="tag">FastAPI</span>, and <span class="tag">HTML/CSS</span>. I specialize in backend architecture, automation, and feature-rich frontends while expanding my expertise into <span class="tag">Cloud Computing (AWS)</span>.
+        </p>
+      
+        <!-- Mission Statement -->
+        <h2>My Values & Mission</h2>
+        <ul class="values">
+          <li>💡 Solve real-world problems through automation and intelligent systems.</li>
+          <li>🧠 Continuously improve by learning daily and pushing technical boundaries.</li>
+          <li>🔍 Emphasize clarity, structure, and scalability in every solution I develop.</li>
+          <li>🤝 Contribute meaningfully to the tech community through open-source and collaboration.</li>
+        </ul>
+      
+        <!-- Hobbies -->
+        <h2>Beyond the Code</h2>
+        <p>
+          I’m a creative and hands-on thinker. Outside development, I enjoy exploring <strong>mechanical fabrication</strong> and <strong>welding</strong>, which sparked my original passion for problem-solving. I also dive into <strong>research topics</strong>, experiment with automation bots, and enjoy documenting what I learn. When I step away from screens, I appreciate good music, photography, and keeping my skills sharp across disciplines.
+        </p>
+      
+        <!-- Timeline -->
+        <h2>My Journey</h2>
+        <ul class="timeline">
+          <li><strong>2019–2020:</strong> Certified in Welding & Fabrication</li>
+          <li><strong>2021:</strong> Transitioned into Computer Science & Programming</li>
+          <li><strong>2022:</strong> Built first automation and scripting tools in Python</li>
+          <li><strong>2023:</strong> Delivered full-stack and ML-driven projects</li>
+          <li><strong>2024:</strong> Deployed cloud-based systems and advanced backend services</li>
+          <li><strong>2025:</strong> Building impactful tech tools, bots, and real-world apps</li>
+        </ul>
+      
+        <!-- Quick Stats -->
+        <h2>At a Glance</h2>
+        <div class="stats-grid">
+          <div class="stat"><span class="number">25+</span><br>Completed Projects</div>
+          <div class="stat"><span class="number">4+</span><br>Years of Coding Experience</div>
+          <div class="stat"><span class="number">12+</span><br>Technical Certifications</div>
+          <div class="stat"><span class="number">1</span><br>Cloud Deployments Live</div>
+          <div class="stat"><span class="number">7+</span><br>Tools Automated</div>
+          <div class="stat"><span class="number">4+</span><br>Researcher with Practical Edge</div>
+        </div>
+      
+        <!-- Testimonials Section -->
+        <h2>Leave a Testimonial</h2>
+      <form id="testimonialForm">
+        <input type="text" name="name" placeholder="Your name" required />
+        <textarea name="message" placeholder="Leave your testimonial..." required></textarea>
+        <select name="rating" required>
+          <option value="">Rating</option>
+          <option value="5">★★★★★</option>
+          <option value="4">★★★★☆</option>
+          <option value="3">★★★☆☆</option>
+          <option value="2">★★☆☆☆</option>
+          <option value="1">★☆☆☆☆</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+      
+      <div id="testimonial-list"></div>
+      
+      
+        <div id="testimonial-list">
+          <!-- Testimonials will appear here (you can render with JS or from backend) -->
+        </div>
+      </section>
+      
+    </main>
 
     <!-- Right Navigation -->
     <!-- Right Nav -->
-    <!-- Footer --><nav class="nav">
-    <!-- Footer -->  <a href="about.html" title="About"><i class="fas fa-user"></i></a>
-    <!-- Footer -->  <a href="#skills" title="Skills"><i class="fas fa-code"></i></a>
-    <!-- Footer -->  <a href="#projects" title="Projects"><i class="fas fa-project-diagram"></i></a>
-    <!-- Footer -->  <a href="#research" title="Research"><i class="fas fa-flask"></i></a>
-    <!-- Footer -->  <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
-    <!-- Footer --></nav>
-
-    <!-- Main Content -->
-    <main class="content">
-      <!-- About -->
-      <section id="about">
-        <h1>About Me</h1>
-        <p>
-          I'm Elliot Ekene Nzei, a forward-thinking Full Stack Developer with a strong foundation in both frontend and backend technologies. I specialize in building robust, scalable applications using Python, HTML, CSS, and JavaScript. I’m currently expanding my expertise into cloud computing to develop smarter, more resilient systems.
-        </p>
-        <p>
-          My technical journey began with a hands-on background in welding and fabrication. This unconventional start instilled in me a sharp eye for detail, discipline, and problem-solving—skills I now apply rigorously in software development.
-        </p>
-        <p>
-          As a researcher and technologist, I focus on automation, intelligent systems, and seamless user experiences. From architecting efficient backend logic to designing elegant, user-centric interfaces, I strive to deliver real-world solutions that are as functional as they are innovative.
-        </p>
-        <p>
-          I'm committed to continuous growth, pushing boundaries, and delivering quality at every stage. I believe in building not just code—but impact.
-        </p>
-      </section>
-
-      <!-- Services -->
-      <section id="services">
-        <h2>Services</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Web Development</h3>
-            <p>Responsive and modern websites using HTML, CSS, JS, and Python backends.</p>
-          </div>
-          <div class="card">
-            <h3>Cloud Solutions</h3>
-            <p>Deploy, scale, and secure web apps using AWS EC2, S3, Lambda, and more.</p>
-          </div>
-          <div class="card">
-            <h3>Automation Scripts</h3>
-            <p>Python automation for real-world tasks: scraping, emailing, data analysis.</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Projects -->
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Transaction Analysis System</h3>
-            <p>ML-powered Python tool for detecting recurring payments with feature-rich dashboards.</p>
-            <a href="https://github.com/elliotnzei/transaction-analysis" target="_blank">View on GitHub</a>
-          </div>
-          <div class="card">
-            <h3>Face-ID Generator</h3>
-            <p>HTML/CSS + Python project for creating styled ID cards with captured photos.</p>
-            <a href="https://github.com/elliotnzei/face-id-generator" target="_blank">View on GitHub</a>
-          </div>
-          <div class="card">
-            <h3>Portfolio Website</h3>
-            <p>Fully responsive portfolio built with glassmorphism design and sidebar nav.</p>
-            <a href="https://github.com/elliotnzei/portfolio" target="_blank">View on GitHub</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-
-        <div class="contact-box">
-          <ul class="contact">
-            <li><strong>Email:</strong> <a href="mailto:elliot.nzei@email.com">elliot.nzei@email.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+2340000000000">+234 000 000 0000</a></li>
-            <li><strong>Location:</strong> Lagos, Nigeria</li>
-          </ul>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <!-- Optional JavaScript -->
-  <script>
-    // Contact form submission (non-functional stub)
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Message sent!');
-    });
-  </script>
-</body>
-</html>
+    <nav class="nav">
+      <a href="index.html" title="Home"><i class="fas fa-home"></i></a>
+      <a href="skills.html" title="Skills"><i class="fas fa-code"></i></a>
+      <a href="projects.html" title="Projects"><i class="fas fa-project-diagram"></i></a>
+      <a href="research.html" title="Research"><i class="fas fa-flask"></i></a>
+      <a href="contact.html" title="Contact"><i class="fas fa-envelope"></i></a>
+    </nav>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+  </html>
