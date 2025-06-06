@@ -34,8 +34,8 @@ body {
   z-index: 2;
 }
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #ffffff80;
@@ -45,10 +45,35 @@ body {
   font-size: 22px;
   margin-bottom: 5px;
 }
-.sidebar p {
-  font-size: 14px;
-  color: #bbb;
-  margin-bottom: 20px;
+.sidebar-box {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 12px;
+  padding: 18px 15px;
+  margin-bottom: 22px;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  text-align: center;
+}
+
+.box-p {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: -2px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
 }
 .contact li {
   list-style: none;
@@ -59,7 +84,7 @@ body {
 .btn {
   background: #00c9ff;
   color: #000;
-  padding: 10px 20px;
+  padding: 10px 40px;
   border-radius: 30px;
   text-decoration: none;
   margin-top: 20px;
@@ -141,3 +166,80 @@ body {
   color: #000;
 }
 /* Footer */
+
+/* Contact Form */
+#contact {
+  margin-top: 50px;
+}
+#contact h2 {
+  margin-bottom: 20px;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+}
+#contactForm input,
+#contactForm textarea {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  font-size: 14px;
+  resize: none;
+}
+#contactForm textarea {
+  min-height: 120px;
+}
+#contactForm button {
+  background: #00c9ff;
+  color: #000;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#contactForm button:hover {
+  background: #92fe9d;
+}
+.contact-box {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.contact-box ul.contact {
+  padding-left: 0;
+}
+.contact-box ul.contact li {
+  margin-bottom: 10px;
+  color: #eee;
+  font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+  }
+  .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  .content {
+    margin-left: 200px;
+    margin-right: 20px;
+  }
+  .nav {
+    width: 70px;
+    right: -70px; /* Hide off-screen */
+  }
+}

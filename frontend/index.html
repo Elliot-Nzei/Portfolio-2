@@ -13,14 +13,16 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <img src="./images/image_02.jpg" alt="Elliot Nzei Photo" class="avatar">
-      <h2>Elliot Nzei</h2>
-      <p>Full Stack Developer</p>
-      <ul class="contact">
-        <li><i class="fas fa-phone-alt"></i> +234 814 864 4730</li>
-        <li><i class="fas fa-envelope"></i> elliotnzei41@gmail.com</li>
-        <li><i class="fas fa-map-marker-alt"></i> Warri, Nigeria</li>
-        <li><i class="fas fa-birthday-cake"></i> April 10, 2002</li>
-      </ul>
+      <h2>Elliot Ekene Nzei</h2>
+      <p class="box-p">Full Stack Developer</p>
+      <div class="contact-box">
+        <ul class="contact">
+          <li><i class="fas fa-phone-alt"></i> +234 814 864 4730</li>
+          <li><i class="fas fa-envelope"></i> elliotnzei41@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Warri, Nigeria</li>
+          <li><i class="fas fa-birthday-cake"></i> April 10, 2002</li>
+        </ul>
+      </div>
       <a href="../backend/public/ELLIOT'S CV.pdf" class="btn" download>Download CV</a>
     </aside>
 
@@ -28,27 +30,56 @@
     <main class="content">
       <section id="about">
         <h1>About Me</h1>
-        <p>I’m a Creative Director and UI/UX Designer from Nigeria. I enjoy transforming complex ideas into beautiful digital experiences.</p>
+        <p>
+          I’m a Full Stack Developer and Researcher with a strong focus on Python, JavaScript, DevOps, and Cloud Infrastructure. I specialize in building scalable, high-performance systems and automating real-world workflows. My work bridges the gap between research and implementation—turning complex ideas into reliable, maintainable code. I thrive in solving technical challenges with clean, modern architecture and a forward-thinking mindset.
+        </p>
       </section>
-
+      
       <section id="services">
         <h2>What I Do</h2>
         <div class="cards">
-          <div class="card"><i class="fas fa-pencil-ruler"></i> UI/UX Design</div>
-          <div class="card"><i class="fas fa-mobile-alt"></i> App Development</div>
-          <div class="card"><i class="fas fa-camera"></i> Photography</div>
-          <div class="card"><i class="fas fa-code"></i> Web Development</div>
+          <div class="card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Full Stack Development</h3>
+            <p>Building complete web applications using Python, JavaScript, HTML, and CSS — from RESTful APIs to responsive UIs.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-database"></i>
+            <h3>Data Engineering</h3>
+            <p>Creating automated pipelines and tools for transaction analysis, feature extraction, and machine learning-ready datasets.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-server"></i>
+            <h3>DevOps & Cloud</h3>
+            <p>Deploying applications using Docker, EC2, S3, and CI/CD pipelines to ensure performance, scalability, and reliability.</p>
+          </div>
+          <div class="card">
+            <i class="fas fa-user-shield"></i>
+            <h3>Security & Research</h3>
+            <p>Conducting in-depth technical research with a focus on data privacy, digital ethics, and cybersecurity awareness.</p>
+          </div>
         </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </section>
     </main>
 
     <!-- Right Nav -->
-    <nav class="nav">
-      <a href="#about" title="About"><i class="fas fa-user"></i></a>
-      <a href="#services" title="Services"><i class="fas fa-cogs"></i></a>
-      <a href="#services" title="Services"><i class="fas fa-cogs"></i></a>
-      <a href="#services" title="Services"><i class="fas fa-cogs"></i></a>
-    </nav>
+    <!-- Footer --><nav class="nav">
+    <!-- Footer -->  <a href="#about" title="About"><i class="fas fa-user"></i></a>
+    <!-- Footer -->  <a href="#skills" title="Skills"><i class="fas fa-code"></i></a>
+    <!-- Footer -->  <a href="#projects" title="Projects"><i class="fas fa-project-diagram"></i></a>
+    <!-- Footer -->  <a href="#research" title="Research"><i class="fas fa-flask"></i></a>
+    <!-- Footer -->  <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
+    <!-- Footer --></nav>
   </div>
   <script src="script.js"></script>
 </body>
