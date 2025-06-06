@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="avatar.jpg" alt="Your Avatar" class="avatar" />
+      <h2>Your Name</h2>
+      <p class="box-p">Web Developer & Researcher</p>
+
+      <div class="sidebar-box">
+        <p>Location: Lagos, Nigeria</p>
+        <p>Email: your.email@example.com</p>
+      </div>
+
+      <div class="skills-box">
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li><i class="fas fa-code"></i> Python</li>
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-js-square"></i> JavaScript</li>
+          <li><i class="fas fa-cloud"></i> AWS & Cloud</li>
+        </ul>
+      </div>
+
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </aside>
+
+    <!-- Right Navigation -->
+    <nav class="nav">
+      <a href="#about"><i class="fas fa-user"></i></a>
+      <a href="#services"><i class="fas fa-cogs"></i></a>
+      <a href="#projects"><i class="fas fa-briefcase"></i></a>
+      <a href="#contact"><i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <!-- About -->
+      <section id="about">
+        <h1>About Me</h1>
+        <p>Hello! I’m a passionate developer and researcher specialized in Python, web development, and cloud computing.</p>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <h2>Services</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Web Development</h3>
+            <p>Responsive and modern websites using HTML, CSS, JS, and Python backends.</p>
+          </div>
+          <div class="card">
+            <h3>Cloud Solutions</h3>
+            <p>Deploy, scale, and secure web apps using AWS EC2, S3, Lambda, and more.</p>
+          </div>
+          <div class="card">
+            <h3>Automation Scripts</h3>
+            <p>Python automation for real-world tasks: scraping, emailing, data analysis.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Transaction Analysis System</h3>
+            <p>ML-powered Python tool for detecting recurring payments with feature-rich dashboards.</p>
+          </div>
+          <div class="card">
+            <h3>Face-ID Generator</h3>
+            <p>HTML/CSS + Python project for creating styled ID cards with captured photos.</p>
+          </div>
+          <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Fully responsive portfolio built with glassmorphism design and sidebar nav.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-box">
+          <ul class="contact">
+            <li><strong>Email:</strong> your.email@example.com</li>
+            <li><strong>Phone:</strong> +234 000 000 0000</li>
+            <li><strong>Location:</strong> Lagos, Nigeria</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script>
+    // Contact form submission (non-functional stub)
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Message sent!');
+    });
+  </script>
+</body>
+</html>
