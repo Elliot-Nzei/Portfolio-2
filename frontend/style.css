@@ -12,6 +12,7 @@ body {
   display: flex;
   height: 100vh;
   overflow: hidden;
+  align-items: stretch;
 }
 .sidebar {
   width: 250px;
@@ -19,11 +20,115 @@ body {
   padding: 20px;
   position: fixed;
   height: 100vh;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 140px;
+  margin-bottom: 90px;
+  margin-left: 50px;
+    overflow-y: auto;
+
 }
 .avatar {
   width: 120px;
-  border-radius: 50%;
+  border-radius: 15%;
   margin-bottom: 10px;
+  
+}
+.sidebar h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.sidebar p {
+  font-size: 16px;
+  color: #666;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 10px 0;
+}
+.sidebar ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+  border-radius: 5px;
+}
+.sidebar ul li a:hover {
+  background: #ddd;
+}
+.sidebar ul li a.active {
+  background: #007bff;
+  color: white;
+}
+.sidebar ul li a.active:hover {
+  background: #0056b3;
+}
+.sidebar ul li a i {
+  margin-right: 10px;
+}
+.sidebar ul li a span {
+  font-size: 16px;
+}
+.sidebar ul li a i.fa {
+  font-size: 20px;
+}
+.sidebar ul li a i.fa-solid {
+  color: #007bff;
+}
+.sidebar ul li a i.fa-regular {
+  color: #666;
+}
+.sidebar ul li a i.fa-brands {
+  color: #28a745;
+}
+.sidebar ul li a i.fa-solid:hover,
+.sidebar ul li a i.fa-regular:hover,
+.sidebar ul li a i.fa-brands:hover {
+  color: #fff;
+}
+.profile-info {
+  margin-top: 20px;
+  text-align: left;
+}
+.profile-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.profile-info p {
+  font-size: 14px;
+  color: #666;
+}
+.profile-info ul {
+  padding: 0;
+}
+.profile-info ul li {
+  margin: 5px 0;
+}
+.profile-info ul li i {
+  margin-right: 10px;
+  color: #007bff;
+}
+.profile-info ul li span {
+  font-size: 14px;
+}
+.profile-info ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+.profile-info ul li a:hover {
+  text-decoration: underline;
+}
+.profile-info ul li a i {
+  margin-right: 5px;
+}
+.sidebar ul li a i.fa-solid,
+.sidebar ul li a i.fa-regular,
+.sidebar ul li a i.fa-brands {
+  color: #007bff;
 }
 .contact {
   list-style: none;
@@ -31,12 +136,15 @@ body {
 }
 .btn {
   display: inline-block;
+  text-align: center;
   margin-top: 10px;
   background: #007bff;
   color: white;
-  padding: 8px 12px;
+  font-weight: bold;
+  border: none;
+  padding: 18px 12px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .content {
   margin-left: 250px;
