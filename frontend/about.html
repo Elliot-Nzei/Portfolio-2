@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta charset="UTF-8">
+  <title>Portfolio-2 | Elliot Nzei</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <!-- Sidebar -->
     <aside class="sidebar">
-      <img src="avatar.jpg" alt="Your Avatar" class="avatar" />
-      <h2>Your Name</h2>
-      <p class="box-p">Web Developer & Researcher</p>
+      <a href="index.html" title="Home">
+        <img src="./images/image_02.jpg" alt="Elliot Nzei Photo" class="avatar">
+      </a>
+      <h2>Elliot Ekene Nzei</h2>
+        <p class="box-p">Full Stack Developer</p>
 
-      <div class="sidebar-box">
-        <p>Location: Lagos, Nigeria</p>
-        <p>Email: your.email@example.com</p>
-      </div>
-
-      <div class="skills-box">
-        <h3>Skills</h3>
-        <ul class="skills-list">
-          <li><i class="fas fa-code"></i> Python</li>
-          <li><i class="fab fa-html5"></i> HTML</li>
-          <li><i class="fab fa-css3-alt"></i> CSS</li>
-          <li><i class="fab fa-js-square"></i> JavaScript</li>
-          <li><i class="fas fa-cloud"></i> AWS & Cloud</li>
+        <div class="social-wrapper">
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      <div class="contact-box">
+        <ul class="contact">
+          <li><i class="fas fa-phone-alt"></i> +234 814 864 4730</li>
+          <li><i class="fas fa-envelope"></i> elliotnzei41@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Warri, Nigeria</li>
+          <li><i class="fas fa-birthday-cake"></i> April 10, 2002</li>
         </ul>
       </div>
-
-      <div class="social-links">
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
+      <a href="../backend/public/ELLIOT'S CV.pdf" class="btn" download>Download CV</a>
     </aside>
 
+
     <!-- Right Navigation -->
-    <nav class="nav">
-      <a href="#about"><i class="fas fa-user"></i></a>
-      <a href="#services"><i class="fas fa-cogs"></i></a>
-      <a href="#projects"><i class="fas fa-briefcase"></i></a>
-      <a href="#contact"><i class="fas fa-envelope"></i></a>
-    </nav>
+    <!-- Right Nav -->
+    <!-- Footer --><nav class="nav">
+    <!-- Footer -->  <a href="about.html" title="About"><i class="fas fa-user"></i></a>
+    <!-- Footer -->  <a href="#skills" title="Skills"><i class="fas fa-code"></i></a>
+    <!-- Footer -->  <a href="#projects" title="Projects"><i class="fas fa-project-diagram"></i></a>
+    <!-- Footer -->  <a href="#research" title="Research"><i class="fas fa-flask"></i></a>
+    <!-- Footer -->  <a href="#contact" title="Contact"><i class="fas fa-envelope"></i></a>
+    <!-- Footer --></nav>
 
     <!-- Main Content -->
     <main class="content">
       <!-- About -->
       <section id="about">
         <h1>About Me</h1>
-            <p>
-              I'm Elliot Ekene Nzei, a forward-thinking Full Stack Developer with a strong foundation in both frontend and backend technologies. I specialize in building robust, scalable applications using Python, HTML, CSS, and JavaScript. I’m currently expanding my expertise into cloud computing to develop smarter, more resilient systems.
-            </p>
-            <p>
-              My technical journey began with a hands-on background in welding and fabrication. This unconventional start instilled in me a sharp eye for detail, discipline, and problem-solving—skills I now apply rigorously in software development.
-            </p>
-            <p>
-              As a researcher and technologist, I focus on automation, intelligent systems, and seamless user experiences. From architecting efficient backend logic to designing elegant, user-centric interfaces, I strive to deliver real-world solutions that are as functional as they are innovative.
-            </p>
-            <p>
-              I'm committed to continuous growth, pushing boundaries, and delivering quality at every stage. I believe in building not just code—but impact.
-            </p>
+        <p>
+          I'm Elliot Ekene Nzei, a forward-thinking Full Stack Developer with a strong foundation in both frontend and backend technologies. I specialize in building robust, scalable applications using Python, HTML, CSS, and JavaScript. I’m currently expanding my expertise into cloud computing to develop smarter, more resilient systems.
+        </p>
+        <p>
+          My technical journey began with a hands-on background in welding and fabrication. This unconventional start instilled in me a sharp eye for detail, discipline, and problem-solving—skills I now apply rigorously in software development.
+        </p>
+        <p>
+          As a researcher and technologist, I focus on automation, intelligent systems, and seamless user experiences. From architecting efficient backend logic to designing elegant, user-centric interfaces, I strive to deliver real-world solutions that are as functional as they are innovative.
+        </p>
+        <p>
+          I'm committed to continuous growth, pushing boundaries, and delivering quality at every stage. I believe in building not just code—but impact.
+        </p>
       </section>
 
       <!-- Services -->
@@ -91,14 +93,17 @@
           <div class="card">
             <h3>Transaction Analysis System</h3>
             <p>ML-powered Python tool for detecting recurring payments with feature-rich dashboards.</p>
+            <a href="https://github.com/elliotnzei/transaction-analysis" target="_blank">View on GitHub</a>
           </div>
           <div class="card">
             <h3>Face-ID Generator</h3>
             <p>HTML/CSS + Python project for creating styled ID cards with captured photos.</p>
+            <a href="https://github.com/elliotnzei/face-id-generator" target="_blank">View on GitHub</a>
           </div>
           <div class="card">
             <h3>Portfolio Website</h3>
             <p>Fully responsive portfolio built with glassmorphism design and sidebar nav.</p>
+            <a href="https://github.com/elliotnzei/portfolio" target="_blank">View on GitHub</a>
           </div>
         </div>
       </section>
@@ -115,8 +120,8 @@
 
         <div class="contact-box">
           <ul class="contact">
-            <li><strong>Email:</strong> your.email@example.com</li>
-            <li><strong>Phone:</strong> +234 000 000 0000</li>
+            <li><strong>Email:</strong> <a href="mailto:elliot.nzei@email.com">elliot.nzei@email.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+2340000000000">+234 000 000 0000</a></li>
             <li><strong>Location:</strong> Lagos, Nigeria</li>
           </ul>
         </div>
