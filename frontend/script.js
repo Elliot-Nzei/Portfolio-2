@@ -1,2 +1,7 @@
-// Add interactivity if needed later
-console.log("Portfolio-2 loaded");
+document.querySelectorAll('.nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const section = document.querySelector(this.getAttribute('href'));
+    section.scrollIntoView({ behavior: 'smooth' });
+  });
+});
