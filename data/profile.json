@@ -1,0 +1,32 @@
+{
+  "experience": [
+    {
+      "role": "Full Stack Developer",
+      "company": "Freelance / Research Projects",
+      "years": "2022–Present",
+      "description": "Spearheaded development of modular, scalable web applications using Python (FastAPI), JavaScript, HTML, and CSS. Implemented advanced transaction analysis systems, data pipelines, and API integrations with cloud deployment on AWS."
+    },
+    {
+      "role": "Researcher & Backend Engineer",
+      "company": "Independent Research",
+      "years": "2021–2022",
+      "description": "Led multiple research initiatives focused on machine learning, transaction recurrence detection, and feature engineering. Built and evaluated ML models, authored technical documentation, and deployed data-driven services using Python."
+    },
+    {
+      "role": "Welding and Fabrication Specialist (Earlier Career)",
+      "company": "Technical Certification Program",
+      "years": "2018–2020",
+      "description": "Completed certified training in welding and fabrication. Applied structured problem-solving and precision work, contributing to a strong foundation for logical and technical thinking in later programming career."
+    }
+  ],
+  "certificates": [
+    "Google IT Support Professional Certificate",
+    "Meta Full-Stack Web Developer Certificate",
+    "AWS Certified Cloud Practitioner",
+    "ND2 Computer Science Academic Program – In Progress",
+    "Python for Everybody – University of Michigan (Coursera)",
+    "Automating Real-World Tasks with Python – Google/Coursera",
+    "Sustainable Agriculture & Food Systems – BYU-Pathway Program",
+    "Frontend & Backend Development Seminar – ND2 Computer Science"
+  ]
+}
